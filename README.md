@@ -18,6 +18,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## SVG assets
+
+- Keep all inline SVG files inside `public/svgs-inline`.
+- Update `TOTAL_SVGS` in `app/lib/galleryData.ts` if you add or remove files (filenames must stay `webapp00001.svg`, `webapp00002.svg`, ...).
+- Both the home page and `/gallery` consume that shared `imageData` helper so the counts stay in sync.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
